@@ -47,7 +47,7 @@ def analyze_report(text : str) -> str:
 
 if __name__ == "__main__":
 
-    text = extract_test_from_pdf(r"C:\Dev\project_mmbu\sample_pdf.pdf")
+    text = extract_test_from_pdf("sample_pdf.pdf") # replace with pdf path
     feedback_text = analyze_report(text=text)
     pdf = FeedbackPDF()
     pdf.add_feedback(feedback_text)
